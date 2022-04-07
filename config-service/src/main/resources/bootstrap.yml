@@ -1,0 +1,16 @@
+server:
+  port: 8081
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          #url del repositorio donde esta ubicado los proyectos (con ello el fichero yml de ellos)
+          uri: https://github.com/marianoldm/bootCampConfigService.git
+          # especificamos donde esta los archivos de configuracion de nuestros proyectos
+          searchPaths: config-data
+  security:
+    user:
+      name: root
+      password: s3cr3t
